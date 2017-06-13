@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 9, 2012 1:14:55 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="Hibernate.Products" table="products" catalog="music_shop">
+        <id name="model" type="string">
+            <column name="model" length="100" />
+            <generator class="assigned" />
+        </id>
+        <property name="brand" type="string">
+            <column name="brand" length="100" not-null="true" />
+        </property>
+        <property name="price" type="string">
+            <column name="price" length="100" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
